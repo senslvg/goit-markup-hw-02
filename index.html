@@ -6,45 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-markup-hw-02</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--ХЕДЕР-->
     <header>
       <!-- Область навигации -->
-      <nav class="nav">
-        <a href="/" style="text-decoration: none">
-          <span class="logo-web">Web</span>Studio</a
+      <nav>
+        <a class="logo" href="/">
+          <span class="logo-web">Web</span
+          ><span class="logo-studio">Studio</span></a
         >
-        <ul>
-          <li><a class="nav-studio" href="">Студия</a></li>
+        <ul class="menu">
+          <li><a class="menu-studio" href="">Студия</a></li>
           <li>
-            <a class="nav-portfo" lio href="./portfolio.html">Портфолио</a>
+            <a class="menu-portfolio" href="./portfolio.html">Портфолио</a>
           </li>
-          <li><a class="nav-contact" ts href="">Контакты</a></li>
+          <li><a class="menu-contacts" href="">Контакты</a></li>
         </ul>
       </nav>
 
       <!-- КОНТАКТЫ В ХЕДЕРЕ -->
-      <ul>
+      <ul class="contacts">
         <li>
-          <a class="mail" href="mailto:info@devstudio.com"
+          <a class="contacts-mail" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11 </a></li>
+        <li>
+          <a class="contacts-tel" href="tel:+380961111111"
+            >+38 096 111 11 11
+          </a>
+        </li>
       </ul>
     </header>
 
     <main>
       <!-- Hero -->
-      <section class="hero">
-        <h1>Эффективные решения для вашего бизнеса</h1>
+      <section>
+        <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
         <button class="button" type="button">Заказать услугу</button>
       </section>
 
       <!-- СЕКЦИЯ Наши преимущества -->
-      <section class="features-list">
-        <h2>Наши преимущества</h2>
+      <section>
+        <h2 hidden class="features-list">Наши преимущества</h2>
         <ul>
           <li>
             <h3>Внимание к деталям</h3>
@@ -82,8 +93,8 @@
       </section>
 
       <!-- СЕКЦИЯ 2 -->
-      <section class="image">
-        <h2>Чем мы занимаемся</h2>
+      <section>
+        <h2 class="image">Чем мы занимаемся</h2>
         <ul>
           <li>
             <img
@@ -113,8 +124,8 @@
       </section>
 
       <!-- СЕКЦИЯ 3 -->
-      <section class="description">
-        <h2>Наша команда</h2>
+      <section>
+        <h2 class="ourteam">Наша команда</h2>
         <ul>
           <li>
             <img
