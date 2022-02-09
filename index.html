@@ -6,39 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-markup-hw-02</title>
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Основные шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@100&family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <!--ХЕДЕР-->
-    <header>
+    <header class="header">
       <!-- Область навигации -->
-      <nav>
-        <a class="logo" href="/">
-          <span class="logo-web">Web</span
-          ><span class="logo-studio">Studio</span></a
+      <nav class="nav">
+        <a class="nav-logo" href="/">
+          <span class="nav-logo-web">Web</span
+          ><span class="nav-logo-studio">Studio</span></a
         >
-        <ul class="menu">
-          <li class="list"><a class="menu-studio-active" href="">Студия</a></li>
-          <li class="list">
-            <a class="menu-portfolio" href="./portfolio.html">Портфолио</a>
+        <ul class="nav-list">
+          <li class="nav-link">
+            <a class="nav-studio-active" href="">Студия</a>
           </li>
-          <li class="list"><a class="menu-contacts" href="">Контакты</a></li>
+          <li class="nav-link">
+            <a class="nav-portfolio" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav-link"><a class="nav-contacts" href="">Контакты</a></li>
         </ul>
       </nav>
 
       <!-- КОНТАКТЫ В ХЕДЕРЕ -->
       <ul class="contacts">
-        <li class="list">
+        <li class="contacts-list">
           <a class="contacts-mail" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li class="list">
+        <li class="contacts-list">
           <a class="contacts-tel" href="tel:+380961111111"
             >+38 096 111 11 11
           </a>
@@ -56,34 +60,34 @@
       <!-- СЕКЦИЯ Наши преимущества -->
       <section>
         <h2 hidden>Наши преимущества</h2>
-        <ul class="features-list">
-          <li class="list">
-            <h3>Внимание к деталям</h3>
-            <p class="features-list-text">
+        <ul class="about">
+          <li class="about-list">
+            <h3 class="about-header">Внимание к деталям</h3>
+            <p class="about-text">
               Идейные соображения, а также <br />
               начало повседневной работы по <br />
               формированию позиции.
             </p>
           </li>
-          <li class="list">
-            <h3>Пунктуальность</h3>
-            <p class="features-list-text">
+          <li class="about-list">
+            <h3 class="about-header">Пунктуальность</h3>
+            <p class="about-text">
               Задача организации, в особенности <br />
               же рамки и место обучения кадров <br />
               влечет за собой.
             </p>
           </li>
-          <li class="list">
-            <h3>Планирование</h3>
-            <p class="features-list-text">
+          <li class="about-list">
+            <h3 class="about-header">Планирование</h3>
+            <p class="about-text">
               Равным образом консультация с <br />
               широким активом в значительной <br />
               степени обуславливает.
             </p>
           </li>
-          <li class="list">
+          <li class="about-list">
             <h3>Современные технологии</h3>
-            <p class="features-list-text">
+            <p class="about-text">
               Значимость этих проблем настолько <br />
               очевидна, что реализация плановых <br />
               заданий.
@@ -95,8 +99,8 @@
       <!-- СЕКЦИЯ 2 -->
       <section>
         <h2 class="image">Чем мы занимаемся</h2>
-        <ul>
-          <li class="list">
+        <ul class="image-list">
+          <li class="image-link">
             <img
               src="./images/img-1.jpg"
               alt="Программист за работой"
@@ -104,7 +108,7 @@
               height="294"
             />
           </li>
-          <li class="list">
+          <li class="image-link">
             <img
               src="./images/img-2.jpg"
               alt="Смартфон и ноутбук"
@@ -112,7 +116,7 @@
               height="294"
             />
           </li>
-          <li class="list">
+          <li class="image-link">
             <img
               src="./images/img-3.jpg"
               alt="Планше с палитрой"
@@ -125,9 +129,9 @@
 
       <!-- СЕКЦИЯ 3 -->
       <section>
-        <h2 class="our-team">Наша команда</h2>
-        <ul class="our-team-name">
-          <li class="list">
+        <h2 class="ourteam">Наша команда</h2>
+        <ul class="ourteam-list">
+          <li class="ourteam-link">
             <img
               src="./images/img-4.jpg"
               alt="Игорь Демьяненко"
@@ -135,9 +139,9 @@
               height="260"
             />
             <h3>Игорь Демьяненко</h3>
-            <p class="our-team-description" lang="en">Product Designer</p>
+            <p class="ourteam-description" lang="en">Product Designer</p>
           </li>
-          <li class="list">
+          <li class="ourteam-link">
             <img
               src="./images/img-5.jpg"
               alt="Ольга Репина"
@@ -145,9 +149,9 @@
               height="260"
             />
             <h3>Ольга Репина</h3>
-            <p class="our-team-description" lang="en">Frontend Developer</p>
+            <p class="ourteam-description" lang="en">Frontend Developer</p>
           </li>
-          <li class="list">
+          <li class="ourteam-link">
             <img
               src="./images/img-6.jpg"
               alt="Николай Тарасов"
@@ -155,9 +159,9 @@
               height="260"
             />
             <h3>Николай Тарасов</h3>
-            <p class="our-team-description" lang="en">Marketing</p>
+            <p class="ourteam-description" lang="en">Marketing</p>
           </li>
-          <li class="list">
+          <li class="ourteam-link">
             <img
               src="./images/img-7.jpg"
               alt="Михаил Ермаков"
@@ -165,14 +169,14 @@
               height="260"
             />
             <h3>Михаил Ермаков</h3>
-            <p class="our-team-description" lang="en">UI Designer</p>
+            <p class="our-eam-description" lang="en">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
 
     <!-- Футер-->
-    <footer>
+    <footer class="footer">
       <!-- <a class="nav-logo" href="/">WebStudio </a> -->
       <a class="logo" href="/">
         <span class="logo-web">Web</span
