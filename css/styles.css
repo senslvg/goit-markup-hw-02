@@ -20,8 +20,10 @@ body {
 
 /* Сброс атрибутов ссылок */
 .logo,
-.menu-studio,
+.menu-studio-active,
 .menu-portfolio,
+.menu-studio,
+.menu-portfolio-active,
 .menu-contacts {
   text-decoration: none;
 }
@@ -42,9 +44,7 @@ body {
   color: var(--title-text-color);
 }
 /* Menu */
-.menu-studio,
-.menu-portfolio,
-.menu-contacts {
+.menu {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.14;
@@ -53,13 +53,15 @@ body {
   color: currentColor;
 }
 /* Подсветка текущей страницы */
-.menu-studio {
+.menu-studio-active,
+.menu-portfolio-active {
   color: var(--accent-color);
 }
 
 /* Contacts */
 .contacts-mail,
-.contacts-tel {
+.contacts-tel,
+.contacts-map {
   text-decoration: none;
   /* color: var(--primary-text-color); */
   color: currentColor;
@@ -95,14 +97,14 @@ body {
   color: #ffffff;
   background-color: var(--accent-color);
 }
-.features-list h2 {
+.features-list {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.features-list p {
+.features-list-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
