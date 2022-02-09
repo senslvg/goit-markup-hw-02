@@ -13,13 +13,21 @@ body {
   color: var(--title-text-color);
 }
 
+/* Сброс атрибутов списков */
 .list {
   list-style-type: none;
 }
 
+/* Сброс атрибутов ссылок */
+.logo,
+.menu-studio,
+.menu-portfolio,
+.menu-contacts {
+  text-decoration: none;
+}
+
 /* Logo */
 .logo {
-  text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -31,13 +39,12 @@ body {
   color: var(--accent-color);
 }
 .logo-studio {
-  color: var(--ti);
+  color: var(--title-text-color);
 }
 /* Menu */
 .menu-studio,
 .menu-portfolio,
 .menu-contacts {
-  text-decoration: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.14;
@@ -45,7 +52,8 @@ body {
   color: var(--primary-text-color);
   color: currentColor;
 }
-.menu-portfolio {
+/* Подсветка текущей страницы */
+.menu-studio {
   color: var(--accent-color);
 }
 
