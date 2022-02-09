@@ -18,7 +18,7 @@ body {
   list-style-type: none;
 }
 
-/* Сброс атрибутов ссылок */
+/* Сброс атрибутов ссылок(подчеркивание) */
 .logo,
 .menu-studio-active,
 .menu-portfolio,
@@ -97,6 +97,7 @@ body {
   color: #ffffff;
   background-color: var(--accent-color);
 }
+/* Секция Наши преимущества (Заголовки) */
 .features-list {
   font-weight: bold;
   font-size: 14px;
@@ -104,13 +105,14 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+/* Секция Наши преимущества (Текст) */
 .features-list-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
+/* Секция Чем мы занимаемся */
 .image {
   font-weight: bold;
   font-size: 36px;
@@ -118,6 +120,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+/* Секция Наша Команда */
 .our-team {
   font-weight: bold;
   font-size: 36px;
@@ -126,7 +130,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.our-team h3 {
+.our-team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19x;
@@ -134,7 +138,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.our-team p {
+.our-team-description {
   font-size: 16px;
   line-height: 11.19;
   text-align: center;
