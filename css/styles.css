@@ -11,56 +11,70 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
   color: var(--title-text-color);
-  letter-spacing: 00.03em;
+  letter-spacing: 0.03em;
 }
 
 /* Сброс атрибутов списков */
+.footer-logo,
 .nav-link,
+.main-link,
+.menu-link,
 .contacts-link,
-.contacts-list,
-.contacts-mail,
+.footer-contacts-link,
 .about-list,
 .image-link,
-.ourteam-link,
-.main-link,
-.menu-link {
+.ourteam-link {
   list-style-type: none;
 }
 
 /* Сброс атрибутов ссылок(подчеркивание) */
-.nav-logo,
+.logo,
 .nav-studio-active,
 .nav-portfolio,
 .nav-studio,
 .nav-portfolio-active,
-.nav-contacts {
+.nav-contacts,
+.footer-logo,
+.footer-contacts-map,
+.footer-contacts-link,
+.footer-contacts-mail,
+.footer-contacts-tel {
   text-decoration: none;
 }
 
-/* Logo */
-.nav-logo {
-  font-family: Raleway;
-  font-weight: 700;
+/* Logo WebStudio Header */
+.logo,
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
   font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
+  line-height: 1.17;
 }
-
-.nav-logo-web {
+.logo-web,
+.footer-logo-web {
   color: var(--accent-color);
 }
-.nav-logo-studio {
+.logo-studio {
   color: var(--title-text-color);
 }
-/* Menu */
-.nav-list {
-  font-weight: 700;
-  font-size: 16px;
+.footer-logo-studio {
+  color: var(--footer-text-color);
+}
+
+/* Область навигации */
+.nav-studio,
+.nav-studio-active,
+.nav-portfolio,
+.nav-portfolio-active,
+.nav-contacts {
+  font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-  color: currentColor;
+  color: var(--title-text-color);
 }
 /* Подсветка текущей страницы */
 .nav-studio-active,
@@ -73,16 +87,17 @@ body {
 .contacts-tel,
 .contacts-map {
   text-decoration: none;
-  /* color: var(--primary-text-color); */
-  color: currentColor;
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.143x;
+  line-height: 1.14px;
   letter-spacing: 0.02em;
 }
 /* Hover - Focus */
 .contacts a:hover,
-.contacts a:focus {
+.footer-contacts a:hover,
+.contacts a:focus,
+.footer-contacts a:focus {
   color: var(--accent-color);
 }
 
@@ -97,6 +112,7 @@ body {
   color: #ffffff;
   background-color: #2f303a;
 }
+/* Кнопки */
 .radiobutton {
   cursor: pointer;
 }
@@ -112,12 +128,26 @@ body {
   color: #ffffff;
   background-color: var(--accent-color);
 }
+
+/* Секция Наши услуги Портфолио */
+.menu-header {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.menu-text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
+
 /* Секция Наши преимущества (Заголовки) */
 .about-header {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 /* Секция Наши преимущества (Текст)  */
@@ -125,16 +155,14 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 /* Секция Чем мы занимаемся */
-.image {
+.image-header {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* Секция Наша Команда */
@@ -143,15 +171,13 @@ body {
   font-size: 36px;
   line-height: 1.16px;
   text-align: center;
-  letter-spacing: 0.03em;
 }
-
-.ourteam-link {
+/* Список сотрудников */
+.ourteam-co-worker {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19x;
+  line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .ourteam-description {
@@ -163,18 +189,23 @@ body {
 }
 
 /* Футер */
-.contacts-map {
+.footer-contacts-mail,
+.footer-contacts-tel {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
-
+.footer-contacts-map {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footer-text-color);
+}
 .footer {
   background-color: var(--footer-background-color);
 }
 
-.contacts-link {
+.footer-contacts-link {
   color: var(--footer-text-color);
 }
