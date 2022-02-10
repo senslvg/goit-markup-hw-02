@@ -17,6 +17,7 @@ body {
 
 /* Сброс атрибутов списков */
 .nav-link,
+.contacts-link,
 .contacts-list,
 .contacts-mail,
 .about-list,
@@ -119,7 +120,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-Секция Наши преимущества (Текст) .about-text {
+/* Секция Наши преимущества (Текст)  */
+.about-text {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.71;
@@ -160,6 +162,7 @@ body {
   color: var(--primary-text-color);
 }
 
+/* Футер */
 .contacts-map {
   font-style: normal;
   font-weight: normal;
@@ -167,6 +170,11 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 .footer {
   background-color: var(--footer-background-color);
+}
+
+.contacts-link {
+  color: var(--footer-text-color);
 }
