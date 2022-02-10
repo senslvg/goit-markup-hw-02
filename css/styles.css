@@ -37,6 +37,8 @@ body {
 .nav-studio,
 .nav-portfolio-active,
 .nav-contacts,
+.contacts-mail,
+.contacts-tel,
 .footer-logo,
 .footer-contacts-map,
 .footer-contacts-link,
@@ -82,11 +84,9 @@ body {
   color: var(--accent-color);
 }
 
-/* Contacts */
+/* Контакты футер */
 .contacts-mail,
-.contacts-tel,
-.contacts-map {
-  text-decoration: none;
+.contacts-tel {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -129,7 +129,7 @@ body {
   background-color: var(--accent-color);
 }
 
-/* Секция Наши услуги Портфолио */
+/* Секция Наши услуги portfolio.html */
 .menu-header {
   font-weight: bold;
   font-size: 18px;
@@ -137,6 +137,7 @@ body {
   letter-spacing: 0.06em;
 }
 
+/* Секция наши услуги portfolio.html */
 .menu-text {
   font-size: 16px;
   line-height: 1.88;
@@ -179,7 +180,7 @@ body {
   line-height: 1.19;
   text-align: center;
 }
-
+/* Список сотрудников - описание */
 .ourteam-description {
   font-size: 16px;
   line-height: 11.19;
@@ -188,7 +189,7 @@ body {
   color: var(--primary-text-color);
 }
 
-/* Футер */
+/* Футер ссылки*/
 .footer-contacts-mail,
 .footer-contacts-tel {
   font-style: normal;
@@ -196,6 +197,7 @@ body {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
+/* Ссылка на карту */
 .footer-contacts-map {
   font-style: normal;
   font-size: 14px;
@@ -204,8 +206,4 @@ body {
 }
 .footer {
   background-color: var(--footer-background-color);
-}
-
-.footer-contacts-link {
-  color: var(--footer-text-color);
 }
