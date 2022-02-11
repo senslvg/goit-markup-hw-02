@@ -60,7 +60,7 @@ body {
   color: var(--accent-color);
 }
 .logo-studio {
-  color: var(--title-text-color);
+  color: #000000;
 }
 .footer-logo-studio {
   color: var(--footer-text-color);
