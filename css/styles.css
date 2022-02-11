@@ -17,26 +17,12 @@ body {
 }
 
 /* Сброс атрибутов списков */
-.footer-logo,
-.nav-line,
-.main-link,
-.menu-link,
-.contacts-line,
-.footer-contacts-line,
-.about-list,
-.image-link,
-.ourteam-link {
+.list {
   list-style-type: none;
 }
 
 /* Сброс атрибутов ссылок(подчеркивание) */
-.logo,
-.nav-link,
-.nav-link-active,
-.contacts-link,
-.footer-logo,
-.footer-link-map,
-.footer-link {
+.link {
   text-decoration: none;
 }
 
@@ -122,6 +108,7 @@ body {
 .radiobutton {
   cursor: pointer;
 }
+
 .button {
   cursor: pointer;
   font-weight: 700;
@@ -137,7 +124,6 @@ body {
 
 /* Секция Наши услуги portfolio.html */
 .menu-header {
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -155,7 +141,6 @@ body {
 
 /* Секция Наши преимущества (Заголовки) */
 .about-header {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -172,7 +157,6 @@ body {
 }
 /* Секция Чем мы занимаемся */
 .image-header {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -183,7 +167,6 @@ body {
 
 /* Секция Наша Команда */
 .ourteam {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -193,7 +176,6 @@ body {
 }
 /* Список сотрудников абзац */
 .ourteam-co-worker {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
