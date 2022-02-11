@@ -6,25 +6,23 @@
   --second-text-color: #f5f5f5;
   --white-text-color: #ffffff;
   --footer-background-color: #2f303a;
-  --
 }
 /* Global */
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--white-text-color);
-  font-style: normal;
-  font-weight: normal;
-  color: var(--title-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   letter-spacing: 0.03em;
+  background-color: var(--white-text-color);
+  color: var(--title-text-color);
 }
 
 /* Сброс атрибутов списков */
 .footer-logo,
-.nav-link,
+.nav-line,
 .main-link,
 .menu-link,
-.contacts-link,
-.footer-contacts-link,
+.contacts-line,
+.footer-contacts-line,
 .about-list,
 .image-link,
 .ourteam-link {
@@ -33,46 +31,45 @@ body {
 
 /* Сброс атрибутов ссылок(подчеркивание) */
 .logo,
-.nav-studio-active,
-.nav-portfolio,
-.nav-studio,
-.nav-portfolio-active,
-.nav-contacts,
-.contacts-mail,
-.contacts-tel,
+.nav-link,
+.nav-link-active,
+.contacts-link,
 .footer-logo,
-.footer-contacts-map,
-.footer-contacts-link,
-.footer-contacts-mail,
-.footer-contacts-tel {
+.footer-link-map,
+.footer-link {
   text-decoration: none;
 }
 
 /* Logo WebStudio Header */
-.logo,
-.footer-logo {
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.17;
-}
 .logo-web,
 .footer-logo-web {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 .logo-studio {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: #000000;
 }
 .footer-logo-studio {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--white-text-color);
 }
 
 /* Область навигации */
-.nav-studio,
-.nav-studio-active,
-.nav-portfolio,
-.nav-portfolio-active,
-.nav-contacts {
+.nav-link,
+.nav-link-active {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -80,25 +77,30 @@ body {
   color: var(--title-text-color);
 }
 /* Подсветка текущей страницы */
-.nav-studio-active,
-.nav-portfolio-active {
+.nav-link-active {
   color: var(--accent-color);
 }
 
-/* Контакты футер */
-.contacts-mail,
-.contacts-tel {
-  color: var(--primary-text-color);
+/* Контакты header */
+.contacts-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 /* Hover - Focus */
-.contacts a:hover,
-.footer-contacts a:hover,
-.contacts a:focus,
-.footer-contacts a:focus {
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus,
+.footer-link-map:hover,
+.footer-link-map:focus,
+.footer-link:hover,
+.footer-link:focus,
+/* portfolio.html */
+.radiobutton:hover,
+.radiobutton:focus {
   color: var(--accent-color);
 }
 
@@ -106,7 +108,6 @@ body {
 .hero-section {
   background-color: var(--footer-background-color);
 }
-
 .hero {
   font-weight: 900;
   font-size: 44px;
@@ -116,13 +117,14 @@ body {
   text-transform: uppercase;
   color: var(--white-text-color);
 }
+
 /* Кнопки */
 .radiobutton {
   cursor: pointer;
 }
 .button {
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   display: flex;
@@ -135,78 +137,98 @@ body {
 
 /* Секция Наши услуги portfolio.html */
 .menu-header {
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--title-text-color);
 }
 
 /* Секция наши услуги portfolio.html */
 .menu-text {
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
 /* Секция Наши преимущества (Заголовки) */
 .about-header {
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--title-text-color);
 }
 /* Секция Наши преимущества (Текст)  */
 .about-text {
-  font-weight: bold;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 /* Секция Чем мы занимаемся */
 .image-header {
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 /* Секция Наша Команда */
 .ourteam {
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 1.16px;
+  line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
-/* Список сотрудников */
+/* Список сотрудников абзац */
 .ourteam-co-worker {
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 /* Список сотрудников - описание */
 .ourteam-description {
   font-size: 16px;
-  line-height: 11.19;
+  line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
-/* Футер ссылки*/
-.footer-contacts-mail,
-.footer-contacts-tel {
+/* Футер */
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer-link {
   font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 /* Ссылка на карту */
-.footer-contacts-map {
+.footer-link-map {
   font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--white-text-color);
-}
-.footer {
-  background-color: var(--footer-background-color);
 }
